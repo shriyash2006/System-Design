@@ -2,6 +2,10 @@
 
 This document provides a production-grade, highly available, and horizontally scalable architectural specification for a distributed URL Shortener (TinyURL) system. It outlines the requirements, mathematical scaling limits, network topologies, range allocation algorithms, storage trade-offs, and critical production safeguards.
 
+## System Design Mindmap
+![TinyURL System Design Mindmap](tinyurl_mindmap.jpg)
+*Visual breakdown of the TinyURL system design. See the full-resolution file at [tinyurl_mindmap.jpg](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/high-level-design/01-tinyurl/tinyurl_mindmap.jpg)*
+
 ---
 
 ## 1. Requirements Framework
