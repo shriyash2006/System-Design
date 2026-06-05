@@ -8,7 +8,7 @@ Use the table below to track the status, complexity, and locations of different 
 
 | # | Design Topic | Subsystem / Category | Complexity | Status | Architectural Specification |
 |---| :--- | :--- | :---: | :---: | :--- |
-| **01** | **TinyURL (Distributed URL Shortener)** | High-Level Design / Core Services | Medium | 🟢 Complete | [high-level-design/01-tinyurl/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/high-level-design/01-tinyurl/README.md) |
+| **01** | **TinyURL (Distributed URL Shortener)** | High-Level Design / Core Services | Medium | 🟢 Complete | [01-tinyurl/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/01-tinyurl/README.md) |
 | **02** | *Upcoming Design...* | System Integration / API Gateway | - | ⚪ Planned | *TBD* |
 
 ---
@@ -18,9 +18,14 @@ Use the table below to track the status, complexity, and locations of different 
 ```directory
 .
 ├── README.md                           # Global playbook tracking dashboard
-└── high-level-design/
-    └── 01-tinyurl/
-        └── README.md                   # Architectural specification for TinyURL
+└── 01-tinyurl/                         # TinyURL Design Case Study
+    ├── README.md                       # Core entrypoint (Overview, Capacity, Stack, Key Learnings)
+    ├── mindmap.jpg                     # High-fidelity design mindmap
+    ├── architecture-diagram.png        # System architecture topology diagram
+    ├── database-schema.png             # url_mappings table ER schema diagram
+    ├── api-design.md                   # REST API endpoints design contracts
+    ├── scaling-notes.md                # range-allocation, caching, FPE algorithms
+    └── tradeoffs.md                    # DB sharding, Zookeeper sequence gaps tradeoffs
 ```
 
 > [!NOTE]
