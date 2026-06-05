@@ -8,7 +8,7 @@ Use the table below to track the status, complexity, and locations of different 
 
 | # | Design Topic | Subsystem / Category | Complexity | Status | Architectural Specification |
 |---| :--- | :--- | :---: | :---: | :--- |
-| **01** | **TinyURL (Distributed URL Shortener)** | High-Level Design / Core Services | Medium | 🟢 Complete | [high-level-design/01-tinyurl/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/tinyurl-system-design/high-level-design/01-tinyurl/README.md) |
+| **01** | **TinyURL (Distributed URL Shortener)** | High-Level Design / Core Services | Medium | 🟢 Complete | [high-level-design/01-tinyurl/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/high-level-design/01-tinyurl/README.md) |
 | **02** | *Upcoming Design...* | System Integration / API Gateway | - | ⚪ Planned | *TBD* |
 
 ---
