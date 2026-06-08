@@ -11,6 +11,7 @@ Use the table below to track the status, complexity, and locations of different 
 | **01** | **TinyURL (Distributed URL Shortener)** | High-Level Design / Core Services | Medium | 🟢 Complete | [01-tinyurl/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/01-tinyurl/README.md) |
 | **02** | **Twitter / Newsfeed (Social Network)** | High-Level Design / Feed Systems | Medium-Hard | 🟢 Complete | [Twitter / Newsfeed: System Design/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/Twitter%20/%20Newsfeed:%20System%20Design/README.md) |
 | **03** | **Web Crawler (Search Ingestion)** | High-Level Design / Scraping Systems | Medium | 🟢 Complete | [Web Crawler: System Design/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/Web%20Crawler:%20System%20Design/README.md) |
+| **04** | **Dropbox / Google Drive (Cloud Storage)** | High-Level Design / File Systems | Medium-Hard | 🟢 Complete | [Dropbox / Google Drive: System Design/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/Dropbox%20/%20Google%20Drive:%20System%20Design/README.md) |
 
 ---
 
@@ -35,14 +36,22 @@ Use the table below to track the status, complexity, and locations of different 
 │   ├── api-design.md                   # REST API endpoints design contracts
 │   ├── scaling-notes.md                # hybrid push/pull fan-out scaling strategy
 │   └── tradeoffs.md                    # push/pull models, consistency tradeoffs
-└── Web Crawler: System Design/         # Web Crawler Case Study
+├── Web Crawler: System Design/         # Web Crawler Case Study
+│   ├── README.md                       # Core entrypoint (Overview, Capacity, Stack, Key Learnings)
+│   ├── mindmap.jpg                     # High-fidelity design mindmap
+│   ├── architecture-diagram.png        # System architecture topology diagram
+│   ├── database-schema.png             # DB schema ER diagram
+│   ├── api-design.md                   # REST API endpoints design contracts
+│   ├── scaling-notes.md                # Frontier scheduling, Bloom filters
+│   └── tradeoffs.md                    # DB selection, hash deduplication tradeoffs
+└── Dropbox / Google Drive: System Design/ # Dropbox / Google Drive Case Study
     ├── README.md                       # Core entrypoint (Overview, Capacity, Stack, Key Learnings)
     ├── mindmap.jpg                     # High-fidelity design mindmap
     ├── architecture-diagram.png        # System architecture topology diagram
     ├── database-schema.png             # DB schema ER diagram
     ├── api-design.md                   # REST API endpoints design contracts
-    ├── scaling-notes.md                # Frontier scheduling, Bloom filters
-    └── tradeoffs.md                    # DB selection, hash deduplication tradeoffs
+    ├── scaling-notes.md                # chunking pipelines, long polling
+    └── tradeoffs.md                    # SQL sharding vs NoSQL, WebSockets vs Long polling
 ```
 
 > [!NOTE]
