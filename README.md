@@ -16,6 +16,8 @@ Use the table below to track the status, complexity, and locations of different 
 | **06** | **Instagram App (Scale Media & Feed)** | High-Level Design / Feed Systems | Medium-Hard | 🟢 Complete | [Instagram App: System Design/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/Instagram%20App:%20System%20Design/README.md) |
 | **07** | **Proximity Service (Yelp/Maps)** | High-Level Design / Location Systems | Medium-Hard | 🟢 Complete | [Proximity Service: System Design/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/Proximity%20Service:%20System%20Design/README.md) |
 | **08** | **Tinder (Real-time Matchmaking)** | High-Level Design / Matchmaking Systems | Medium-Hard | 🟢 Complete | [Tinder: System Design/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/Tinder:%20System%20Design/README.md) |
+| **09** | **Hotel Booking (Reservation System)** | High-Level Design / Booking Systems | Medium-Hard | 🟢 Complete | [Hotel Booking: System Design/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/Hotel%20Booking:%20System%20Design/README.md) |
+
 
 
 
@@ -83,14 +85,22 @@ Use the table below to track the status, complexity, and locations of different 
 │   ├── api-design.md                   # REST API endpoints design contracts
 │   ├── scaling-notes.md                # geohashing prefixes, PostGIS coordinate query setups
 │   └── tradeoffs.md                    # Geohashing vs Quadtrees, PostGIS vs NoSQL, sharding plans
-└── Tinder: System Design/              # Tinder Case Study
+├── Tinder: System Design/              # Tinder Case Study
+│   ├── README.md                       # Core entrypoint (Overview, Capacity, Stack, Key Learnings)
+│   ├── mindmap.jpg                     # High-fidelity design mindmap
+│   ├── architecture-diagram.png        # System architecture topology diagram
+│   ├── database-schema.png             # DB schema ER diagram
+│   ├── api-design.md                   # WebSocket & API design contracts
+│   ├── scaling-notes.md                # S2 geometry cell hashing, WebSocket push notifications
+│   └── tradeoffs.md                    # S2 Cells vs Geohash, NoSQL vs SQL profiles, match loops
+└── Hotel Booking: System Design/       # Hotel Booking Case Study
     ├── README.md                       # Core entrypoint (Overview, Capacity, Stack, Key Learnings)
     ├── mindmap.jpg                     # High-fidelity design mindmap
     ├── architecture-diagram.png        # System architecture topology diagram
     ├── database-schema.png             # DB schema ER diagram
-    ├── api-design.md                   # WebSocket & API design contracts
-    ├── scaling-notes.md                # S2 geometry cell hashing, WebSocket push notifications
-    └── tradeoffs.md                    # S2 Cells vs Geohash, NoSQL vs SQL profiles, match loops
+    ├── api-design.md                   # REST API endpoints design contracts
+    ├── scaling-notes.md                # hotel sharding, pessimistic locks, serializable transactions
+    └── tradeoffs.md                    # Pessimistic vs Optimistic locking, isolation types, sharding
 ```
 
 > [!NOTE]
