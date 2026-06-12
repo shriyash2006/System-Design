@@ -14,6 +14,8 @@ Use the table below to track the status, complexity, and locations of different 
 | **04** | **Dropbox / Google Drive (Cloud Storage)** | High-Level Design / File Systems | Medium-Hard | 🟢 Complete | [Dropbox / Google Drive: System Design/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/Dropbox%20/%20Google%20Drive:%20System%20Design/README.md) |
 | **05** | **Messaging App (WhatsApp/Discord)** | High-Level Design / Chat Protocols | Medium-Hard | 🟢 Complete | [Messaging App: System Design/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/Messaging%20App:%20System%20Design/README.md) |
 | **06** | **Instagram App (Scale Media & Feed)** | High-Level Design / Feed Systems | Medium-Hard | 🟢 Complete | [Instagram App: System Design/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/Instagram%20App:%20System%20Design/README.md) |
+| **07** | **Proximity Service (Yelp/Maps)** | High-Level Design / Location Systems | Medium-Hard | 🟢 Complete | [Proximity Service: System Design/README.md](file:///Users/shriyashsahu/.gemini/antigravity/scratch/System-Design/Proximity%20Service:%20System%20Design/README.md) |
+
 
 
 ---
@@ -63,14 +65,22 @@ Use the table below to track the status, complexity, and locations of different 
     ├── api-design.md                   # WebSocket & API design contracts
     ├── scaling-notes.md                # stateful sockets, Snowflake ID, presence heartbeats
     └── tradeoffs.md                    # WebSockets vs Long polling, storage engine tradeoffs
-└── Instagram App: System Design/       # Instagram App Case Study
+├── Instagram App: System Design/       # Instagram App Case Study
+│   ├── README.md                       # Core entrypoint (Overview, Capacity, Stack, Key Learnings)
+│   ├── mindmap.jpg                     # High-fidelity design mindmap
+│   ├── architecture-diagram.png        # System architecture topology diagram
+│   ├── database-schema.png             # DB schema ER diagram
+│   ├── api-design.md                   # REST API endpoints design contracts
+│   ├── scaling-notes.md                # S3 chunking, Kafka ingestion, hybrid push/pull fan-out
+│   └── tradeoffs.md                    # Push/Pull model, DB sharding, nested comments
+└── Proximity Service: System Design/   # Proximity Service Case Study
     ├── README.md                       # Core entrypoint (Overview, Capacity, Stack, Key Learnings)
     ├── mindmap.jpg                     # High-fidelity design mindmap
     ├── architecture-diagram.png        # System architecture topology diagram
     ├── database-schema.png             # DB schema ER diagram
     ├── api-design.md                   # REST API endpoints design contracts
-    ├── scaling-notes.md                # S3 chunking, Kafka ingestion, hybrid push/pull fan-out
-    └── tradeoffs.md                    # Push/Pull model, DB sharding, nested comments
+    ├── scaling-notes.md                # geohashing prefixes, PostGIS coordinate query setups
+    └── tradeoffs.md                    # Geohashing vs Quadtrees, PostGIS vs NoSQL, sharding plans
 ```
 
 > [!NOTE]
